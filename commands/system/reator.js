@@ -10,7 +10,7 @@ exports.run = async (client, message, args, level) => {
     let embed = new Discord.RichEmbed()
         .setTitle('Reaction Roles')
         .setThumbnail(client.user.avatarURL)
-        .setDescription(`React with: \n\n🏓 - to get the extra ping role.\n🇩🇪 - to get the german role. \n🇺🇸 - to get the english role.`)
+        .setDescription(`React with: \n\n🏓 - to get the extra ping role.\n🇩🇪 - to get the german role. \n🇺🇸 - to get the english role. \n\nClick the reaction again to remove yourself from that role.`)
         .setColor("BLUE")
 
     message.channel.send(embed).then(async msg => {
