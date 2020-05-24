@@ -1,0 +1,14 @@
+module.exports = (client, member) => {
+    // TODO give user role -> config
+
+    function roleadder(user, roleid) {
+
+        let role = user.guild.roles.get(roleid)
+
+        user.addRole(role)
+
+    }
+
+    roleadder(member, client.config.userrole)
+
+}
